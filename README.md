@@ -1,5 +1,3 @@
-
-
 ```markdown
 # Graph Library Testing Project
 
@@ -37,9 +35,6 @@ graph-testing-project/
 │   ├── test_graph.py
 │   └── mutation_tests.py
 ├── requirements.txt    # Project dependencies
-└── .github/            # CI/CD workflow
-    └── workflows/
-        └── python-tests.yml
 ```
 
 ## Features
@@ -103,16 +98,6 @@ coverage run -m unittest discover tests/
 coverage report -m
 ```
 
-## CI/CD Integration
-The project uses GitHub Actions for continuous integration. The workflow file `.github/workflows/python-tests.yml`:
-- Runs tests on every pull request.
-- Verifies code coverage and detects regressions.
-
-Run CI tests locally:
-```bash
-pytest --maxfail=1 --disable-warnings
-```
-
 ## Testing Approaches
 ### Unit Testing
 - Validates individual methods and components.
@@ -131,31 +116,7 @@ pytest --maxfail=1 --disable-warnings
 - **Test Coverage**: Aim for >80%.
 - **Mutation Score**: Minimize undetected mutations to improve test reliability.
 
-## Contribution Guidelines
-1. Fork the repository.
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature/new-feature
-   ```
-3. Add tests for new functionality.
-4. Ensure all tests and CI checks pass:
-   ```bash
-   python -m unittest discover tests/
-   ```
-5. Submit a pull request with a detailed description of your changes.
-
 ## Contact
 **Sachin Miryala**  
-Graduate Research Assistant, NAU  
 📧 sm4335@nau.edu  
 ```
-
----
-
-### Summary of Changes
-- Added **Example Usage** to demonstrate library functionality.
-- Enhanced **Contribution Guidelines** with local CI instructions.
-- Expanded **CI/CD Integration** to explain the `.github/workflows/` structure.
-- Added a note on **Performance Metrics** for goals like test coverage and mutation score.
-
-Let me know if you'd like further adjustments!
