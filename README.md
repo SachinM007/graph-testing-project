@@ -57,7 +57,7 @@ graph-testing-project/
 ## Installation
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/graph-testing-project.git
+   git clone https://github.com/SachinM007/graph-testing-project.git
    cd graph-testing-project
    ```
 
