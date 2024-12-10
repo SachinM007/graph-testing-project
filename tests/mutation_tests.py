@@ -1,7 +1,9 @@
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+from priority_queue import PriorityQueue
 import unittest
-from hypothesis import given
-import hypothesis.strategies as st
-from src.graph_library import Graph
 
 class MutationTestCases(unittest.TestCase):
     def setUp(self):
